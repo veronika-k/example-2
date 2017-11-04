@@ -19,6 +19,7 @@ def makeWhatEverYouLike(xs: List[String], sideEffect: String ⇒ String) =
 makeWhatEverYouLike(List("ABC", "XYZ", "123"), ( x ⇒ x.toLowerCase))
 
 val myName = (name: String) => "My name is "+name
+
 makeWhatEverYouLike(List("John", "Mark"), myName)
 val l = List("Scala", "Erlang", "Clojure")  groupBy (_.length)
 val m = for ((x,y) <- l) yield x -> y.head
